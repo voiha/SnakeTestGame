@@ -26,6 +26,7 @@ playAgain.addEventListener("click", replay);
 //createboard function
 function createBoard(){ 
 popup.style.display = "none"; 
+
 for(let i=0;i<100;i++){
 let div =document.createElement("div") 
 grid.appendChild(div) 
@@ -123,4 +124,5 @@ right.addEventListener("click",()=>direction= 1 )
  createBoard()  
  startGame()  
  popup.style.display = "none"; 
+ 
  }  
