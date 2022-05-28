@@ -49,7 +49,7 @@ interval = setInterval(moveOutcome,intervalTime)
 function moveOutcome (){ 
 let squares =document.querySelectorAll(".grid div") 
 if(checkForHits(squares)){
-alert("mama ti deba PUUUUUUUUUUUUUU") 
+alert("mama ti deba PUUUUUUUUUUUUUU udari zmiqta") 
 popup.style.display="flex" 
 return clearInterval(interval) 
 }else{ 
