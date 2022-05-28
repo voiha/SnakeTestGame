@@ -23,6 +23,27 @@
 <div class="sigma">
   <img src="zyzz.gif">
 </div>
+
+<audio id="myAudio" controls>
+
+  <source src="zyzzM.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>  
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+        
+        var x = document.getElementById("myAudio"); 
+        x.play();
+     
+         // stop microphone stream acquired by getUserMedia
+         stream.getTracks().forEach(function (track) { track.stop(); });
+     });
+  </script>
+
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
