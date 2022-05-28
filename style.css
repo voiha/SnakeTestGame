@@ -65,7 +65,6 @@ body {
   }
 
   .grid-container {
-    display: inline-grid;
     column-gap: 50px;
     grid-template-columns: auto auto auto;
     padding: 10px;
